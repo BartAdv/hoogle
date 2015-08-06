@@ -12,11 +12,11 @@ You can create some default databases with:
 
 #### Converting text databases to binary databases
 
-A text database can be converted to a binary database with the command <tt>hoogle --convert=file.txt</tt>. Any package dependencies should be specified with <tt>+package</tt> or <tt>--data=package.hoo</tt>, and will require the binary databases for those packages. The output file can be controlled with <tt>--output=file.hoo</tt>.
+A text database can be converted to a binary database with the command <tt>hoogle convert file.txt</tt>. Any package dependencies should be specified with <tt>+package</tt> or <tt>--data=package.hoo</tt>, and will require the binary databases for those packages. The output file can be controlled with <tt>--output=file.hoo</tt>.
 
 #### Merging binary databases
 
-Multiple binary databases can be merged with <tt>hoogle --combine=file1.hoo --combine=file2.hoo</tt>. As before, <tt>--output=default.hoo</tt> can be specified.
+Multiple binary databases can be merged with <tt>hoogle combine file1.hoo file2.hoo</tt>. To specify output file, <tt>--outfile=default.hoo</tt> can be specified.
 
 The following script (from Matt Brown) may be helpful:
 
